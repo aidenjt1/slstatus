@@ -65,9 +65,10 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
+	{ run_command,"| ♫: %s", "echo $(mpc current)" },
 	{ wifi_essid, "| W: %3s ", "wlan0" },
 	{ wifi_perc, "%s% |", "wlan0" }, 
-  { ram_used, " RAM %s|", NULL  }, 
+  { ram_used, " RAM %s |", NULL  }, 
   { cpu_perc, " CPU %s%% |", NULL  },
 	{ disk_free," HDD %sB |",			"/" },	
 	{ battery_perc, " BAT %s%%", "BAT1" },
